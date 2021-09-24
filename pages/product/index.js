@@ -13,7 +13,7 @@ const Products = () => {
     if(data && !loading && !error) {
       setProducts(data.getProducts)
     }
-  },[data, error])
+  },[data, loading, error])
 
   return (
     <div>

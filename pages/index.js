@@ -16,7 +16,7 @@ const Clients = () => {
       if(!data) return router.push('/login')
       else setClients(data.getSellerClients)
     }
-  },[data])
+  },[data, loading, error])
 
   return (
     <div>

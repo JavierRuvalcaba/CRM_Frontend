@@ -28,7 +28,7 @@ const EditClient = () => {
             console.log(data.getProductById)
             setProduct(data.getProductById)
         }
-    }, [data])
+    }, [data, loading, error])
 
     const validationSchema = Yup.object({
         name: Yup.string()

@@ -16,7 +16,7 @@ const Header = () => {
                 setUser({ name, lastname })
             }
         }
-    }, [data])
+    }, [data, loading, error, router])
 
     const logout = () => {
         localStorage.removeItem('token')

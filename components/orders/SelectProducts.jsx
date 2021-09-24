@@ -19,7 +19,7 @@ const SelectProducts = () => {
             }))
             setProductsList(options)
         }
-    }, [data])
+    }, [data, loading, error])
 
     useEffect(() => {
         if(data && orderProducts) {

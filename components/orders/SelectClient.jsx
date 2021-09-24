@@ -19,14 +19,14 @@ const SelectClient = () => {
             }))
             setClients(options)
         }
-    }, [data])
+    }, [data, loading, error])
 
     useEffect(() => {
         if(data && orderClient) {
             const clientSelected = data.getSellerClients.filter(c => c.id === orderClient.value)
             setClient(clientSelected[0])
         }
-    },[orderClient])
+    },[data, orderClient])
 
     return (
         <>

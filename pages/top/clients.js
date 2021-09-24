@@ -26,7 +26,7 @@ const TopClients = () => {
             
             setTopClients(graphData)
         }
-    },[data])
+    },[data, loading, error])
 
     return (
         <Layout>

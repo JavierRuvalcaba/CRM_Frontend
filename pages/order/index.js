@@ -13,7 +13,7 @@ const Orders = () => {
     if(data && !loading && !error) {
       setOrders(data.getOrdersBySeller)
     }
-  }, [data])
+  }, [data, loading, error])
 
   return (
     <div>

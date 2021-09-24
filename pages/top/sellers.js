@@ -26,7 +26,7 @@ const TopSellers = () => {
 
             setTopSellers(graphData)
         }
-    },[data])
+    },[data, loading, error])
 
     return (
         <Layout>
